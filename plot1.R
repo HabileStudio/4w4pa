@@ -9,7 +9,9 @@ SCC <- readRDS("data/Source_Classification_Code.rds")
 # Plot the total PM2.5 emissions from all sources
 # for each of the years 1999, 2002, 2005, and 2008
 
-# subset the years we want
+# Subset the years we want
+# (turns out we don't need it since the table contains only these years
+#  but I'll keep it in case the data changes in the future)
 years <- c(1999,2002,2005,2008)
 data <- subset(data, year %in% years)
 # aggregate per year
